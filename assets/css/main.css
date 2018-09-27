@@ -621,7 +621,7 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #ffffff;
+		background-color: rgba(255, 255, 255, 0.42);
 		color: #39454b;
 		padding: 2em;
 	}
@@ -642,7 +642,7 @@ input, select, textarea {
 
 				.box.style2 {
 					padding: 1.5em 1.25em 1.5em 1.25em;
-					background-color: rgba(255, 255, 255, 0.9);
+					background-color: rgba(255, 255, 255, 0.42);
 				}
 
 		}
@@ -2032,7 +2032,12 @@ input, select, textarea {
 			}
 
 			.main.style3.secondary {
-				background: #f5f6f7;
+				/*background: #f5f6f7;*/
+				background: url("images/overlay.png"), url("../../images/photo_86.jpg");
+				background-size: 256px 256px, cover;
+				background-attachment: fixed, fixed;
+				background-position: top left, bottom center;
+				background-repeat: repeat, no-repeat;
 			}
 
 		.main.dark {
@@ -2145,6 +2150,8 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
+		height: 48px;
+		max-height: 48px;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -2160,7 +2167,7 @@ input, select, textarea {
 		position: relative;
 		margin: 0;
 		line-height: 1em;
-		padding: 1.5em;
+		/*padding: 1.5em;*/
 		background: #39454b;
 		color: rgba(185, 186, 187, 0.5);
 		overflow: hidden;
@@ -2190,6 +2197,8 @@ input, select, textarea {
 		@media screen and (max-width: 1000px) {
 
 			#footer {
+				height: 48px;
+				max-height: 48px;
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
@@ -2200,7 +2209,7 @@ input, select, textarea {
 				justify-content: center;
 				line-height: 1.5em;
 				text-align: center;
-				padding: 2em 1em 2em 1em;
+				/*padding: 2em 1em 2em 1em;*/
 			}
 
 				#footer > * {
@@ -2229,7 +2238,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
+		background: url("images/overlay.png"), url("../../images/photo_1.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2239,7 +2248,7 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/one.jpg");
+		background: url("images/overlay.png"), url("../../images/photo_2.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2248,7 +2257,16 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
+		background: url("images/overlay.png"), url("../../images/photo_3.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Two-again */
+
+	#two-again {
+		background: url("images/overlay.png"), url("../../images/photo_4.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2295,3 +2313,7 @@ input, select, textarea {
 			}
 
 		}
+
+.light-text {
+	color: ghostwhite;
+}
